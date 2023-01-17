@@ -79,8 +79,8 @@ const handleSubmit = async (e) =>{
 
 //Fetch data from server for bot response
 
-const response = await fetch('http://localhost:5000',{
-  method:'post',
+const response = await fetch('https://majhi-gpt.onrender.com',{
+  method:'POST',
   headers:{
     'content-type':'application/json'
   },

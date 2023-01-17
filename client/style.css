@@ -45,8 +45,10 @@ body {
 }
 
 .wrapper {
-  width: 100%;
-  padding: 15px;
+	width: 100%;
+	padding: 15px;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .ai {
@@ -147,4 +149,19 @@ button {
 form img {
   width: 30px;
   height: 30px;
+}
+
+.nav-wrapper {
+	background-color: #072d31a3;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	border-radius: 0px;
+}
+.nav-title {
+	font-size: 42px;
+	line-height: 1.2;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
 }
