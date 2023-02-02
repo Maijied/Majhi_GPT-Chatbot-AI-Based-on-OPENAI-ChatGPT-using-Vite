@@ -32,15 +32,9 @@
       console.log("#Bot",element);
       console.log("123...");
 
-    let text = document.getElementById(element).innerHTML;
-    const copyToClipboard = async () => {
-    try {
-      await navigator.clipboard.writeText(text);
-      console.log('Content copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy: ', err);
-    }
-   }
+    let text = document.getElementById(`id-${element}`).innerHTML;
+    console.log("Text", text);
+    
     }
   </script>
 </html>
