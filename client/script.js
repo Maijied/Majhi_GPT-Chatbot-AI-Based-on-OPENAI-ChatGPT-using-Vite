@@ -115,7 +115,7 @@ form.addEventListener('keyup', (e)=>{
 })
 
 function copyToClipboard(element) {
-  console.log("Hi", element)
+  console.log("Hi 123...")
   var $temp = $("<input>");
   $("body").append($temp);
   $temp.val($(element).text()).select();
