@@ -248,3 +248,70 @@ and (-webkit-min-device-pixel-ratio: 3) {
   }
 }
 
+/* News Ticker */
+.news {
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.5);
+  width: 350px;
+  height: 30px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 3px;
+  -webkit-user-select: none
+} 
+.full-width{
+    width: 100%;
+}
+.news span {
+  float: left;
+  color: #fff;
+  padding: 6px;
+  position: relative;
+  top: 1%;
+  border-radius: 4px;
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4);
+  font: 16px 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  cursor: pointer
+}
+
+.news ul {
+  float: left;
+  padding-left: 20px;
+  animation: ticker 10s cubic-bezier(1, 0, .5, 0) infinite;
+  -webkit-user-select: none
+}
+
+.news ul li {line-height: 30px; list-style: none }
+
+.news ul li a {
+  color: #fff;
+  text-decoration: none;
+  font: 14px Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none
+}
+
+@keyframes ticker {
+	0%   {margin-top: 0}
+	25%  {margin-top: -30px}
+	50%  {margin-top: -60px}
+	75%  {margin-top: -90px}
+	100% {margin-top: 0}
+}
+
+.news ul:hover { animation-play-state: paused }
+.news span:hover+ul { animation-play-state: paused }
+
+/* OTHER COLORS */
+.blue { background: #347fd0 }
+.blue span { background: #2c66be }
+.red { background: #d23435 }
+.red span { background: #c22b2c }
+.green { background: #699B67 }
+.green span { background: #547d52 }
+.magenta { background: #b63ace }
+.magenta span { background: #842696 }
+.yellow {background : yellow}
+.yellow span {background : yellow}
