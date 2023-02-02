@@ -34,6 +34,14 @@
       console.log("123...",id);
       let text = document.getElementById(id).innerHTML;
       console.log("Text", text);
+      const copyContent = async () => {
+      try {
+        await navigator.clipboard.writeText(text);
+        console.log('Content copied to clipboard');
+      } catch (err) {
+        console.error('Failed to copy: ', err);
+      }
+      }
     
     }
   </script>
