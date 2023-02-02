@@ -353,8 +353,8 @@ and (-webkit-min-device-pixel-ratio: 3) {
 }
 .floating-container .floating-button {
   position: absolute;
-  width: 65px;
-  height: 65px;
+  width: 40px;
+  height: 40px;
   background: #2cb3f0;
   bottom: 0;
   border-radius: 50%;
