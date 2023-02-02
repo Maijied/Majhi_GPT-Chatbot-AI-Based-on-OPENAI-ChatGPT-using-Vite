@@ -34,7 +34,7 @@ function typeText(element, text){
 
 function generateUniqueId(){
   const timestamp = Date.now();
-  const randomNumber =Math.ceil(Math.random());
+  const randomNumber =Math.ceil(Math.random(0,99999));
   const hexadecimalString = randomNumber.toString(16); 
   return `id-${timestamp}-${hexadecimalString}`;
 }
