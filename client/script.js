@@ -43,14 +43,15 @@ function chatStripe(isAi, value, uniqueId){
   return (
     `
       <div class="wrapper ${isAi && 'ai'}">
-        <div class="chat">
-          <div class="profile">
+        <div class="chat row">
+          <div class="profile col-2">
             <img
               src="${isAi ? bot : user}"
               alt="${isAi ? 'bot' : 'user'}"
             />
           </div>
-          <div class="message" id=${uniqueId}>${value}</div>
+          <div class="message col-9" id=${uniqueId}>${value}</div>
+          <button class="col-1" onclick="myFunction()">Copy text</button>
         </div>
       </div>
     `

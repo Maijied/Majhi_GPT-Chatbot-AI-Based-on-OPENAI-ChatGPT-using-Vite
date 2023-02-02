@@ -74,6 +74,7 @@ body {
 	right: 0;
 	top: 0;
   color: #36aabe;
+  cursor: pointer;
 }
 .profile {
   width: 36px;
