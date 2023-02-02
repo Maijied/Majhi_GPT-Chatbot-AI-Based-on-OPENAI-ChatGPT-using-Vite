@@ -51,7 +51,7 @@ function chatStripe(isAi, value, uniqueId){
             />
           </div>
           <div class="message col-9" id=${uniqueId}>${value}</div>
-          <button class="col-1" onclick="copyText(${value})">Copy text</button>
+          <button class="col-1" onclick="copyText(${uniqueId})">Copy text</button>
         </div>
       </div>
     `
@@ -115,16 +115,17 @@ form.addEventListener('keyup', (e)=>{
 })
 
 function copyText(event) {
+  console.log("E", event)
   // Get the text field
-  var copyText = event;
+  var copyText = document.getElementById("myInput");
 
   // Select the text field
   copyText.select();
   copyText.setSelectionRange(0, 99999); // For mobile devices
 
    // Copy the text inside the text field
-  navigator.clipboard.writeText(event);
+  navigator.clipboard.writeText(copyText.value);
 
   // Alert the copied text
-  alert("Copied the text: " + event);
+  alert("Copied the text: " + copyText.value);
 } 
