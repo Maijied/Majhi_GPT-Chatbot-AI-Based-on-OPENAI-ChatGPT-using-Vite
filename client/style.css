@@ -258,7 +258,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
 	padding: 3px;
 	-webkit-user-select: none;
 	position: absolute;
-	right: 0;
+	right: -150px;
 	top: 50%;
 	transform: rotate(90deg);
 }
