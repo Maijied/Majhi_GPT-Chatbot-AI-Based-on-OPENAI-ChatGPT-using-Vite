@@ -28,22 +28,23 @@
 
   <script>
     function copyToClipboard(element) {
-      console.log("#Bot",typeof element);
-      console.log("#Bot",element);
       let id = "id"+element;
       console.log("123...",id);
       let copyText = document.getElementById(id).innerHTML;
       console.log("Text", copyText);
-      
-      /* Select the text field */
-      copyText.select();
-      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+       /* Select text area by id*/
+       var Text = document.getElementById(id);
+        
+        /* Select the text inside text area. */
+        Text.select();
 
-      /* Copy the text inside the text field */
-      navigator.clipboard.writeText(copyText);
+        /* Copy selected text into clipboard */
+        navigator.clipboard.writeText(Text.value);
 
-      /* Alert the copied text */
-      alert("Copied the text: " + copyText);
+        /* Set the copied text as text for 
+        div with id clipboard */
+        document.getElementById("clipboard")
+            .innerHTML = Text.value;
         
     }
   </script>
