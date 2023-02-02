@@ -52,7 +52,7 @@ function chatStripe(isAi, value, uniqueId){
             />
           </div>
           <div class="message col-9" id=${uniqueId}>${value}</div>
-          <button class="copyBtn col-1" onclick="copyToClipboard(${uniqueId}.toString())"><i class="fal fa-copy"></i></button>
+          <button class="copyBtn col-1" onclick="copyToClipboard(${uniqueId}))"><i class="fal fa-copy"></i></button>
         </div>
       </div>
     `
