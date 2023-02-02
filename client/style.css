@@ -260,7 +260,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
   -webkit-user-select: none
 } 
 .full-width{
-    width: 100%;
+    width: 25%;
 }
 .news span {
   float: left;
@@ -315,3 +315,4 @@ and (-webkit-min-device-pixel-ratio: 3) {
 .magenta span { background: #842696 }
 .yellow {background : yellow}
 .yellow span {background : yellow}
+.sumiblack span {background : #3c272780}
