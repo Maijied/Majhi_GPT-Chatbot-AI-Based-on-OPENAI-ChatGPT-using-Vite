@@ -34,9 +34,10 @@ function typeText(element, text){
 
 function generateUniqueId(){
   // const timestamp = Date.now();
-  const randomNumber = Math.random();
+  const randomNumber = Math.random(99999999);
   // const hexadecimalString = randomNumber.toString(16); 
   const msgID = "bot-"+Math.ceil(randomNumber);
+  console.log("msgID",msgID)
   // return `id-${timestamp}-${hexadecimalString}`;
   return `id-${msgID}`;
 }
