@@ -262,9 +262,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
 	top: 50%;
 	transform: rotate(90deg);
 }
-.full-width{
-    width: 25%;
-}
+
 .news span {
   float: left;
   color: #fff;
