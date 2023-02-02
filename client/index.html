@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
+
     <div class="loader JS_on">
       <span class="binary"></span>
       <span class="binary"></span>
       <span class="getting-there">LOADING STUFF...</span>
     </div>
-
+    
+    
     <div id="app">
       <nav class="nav-wrapper">
         <h2 class="nav-title">MaJHi_GPT ChatBot</h2>
@@ -34,11 +37,8 @@
   </body>
   <!-- CDN -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      (function() {
-      console.log("Working");
+    (function() {
       var loader = document.querySelector('.loader');
       setTimeout(function() {
         loader.className = loader.className + ' JS_on';   
@@ -47,9 +47,8 @@
         loader.className = 'loader';    
       }, 3000);
     })();
-    });
-   
-
+  </script>
+  <script>
   function copyToClipboard(element) {
     let id = "id"+element;
     let copyText = document.getElementById(id).innerHTML;
