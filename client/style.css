@@ -194,7 +194,7 @@ and (max-device-width: 1024px) {
     line-height: 1.2;
   }
   .floating-container {
-    margin: 0px -20px 75px 0px;
+    margin: 0px -20px 75px 0px !important;
   }
 }
  
