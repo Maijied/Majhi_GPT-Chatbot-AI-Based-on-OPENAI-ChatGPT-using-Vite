@@ -67,7 +67,7 @@ body {
   gap: 10px;
 }
 .chat::after {
-	content: "\f007";
+	content: "\f0c5";
   font-family: 'Font Awesome\ 5 Pro';
   font-weight: 600;
 	position: absolute;
