@@ -32,17 +32,19 @@
       console.log("#Bot",element);
       let id = "id"+element;
       console.log("123...",id);
-      let text = document.getElementById(id).innerHTML;
-      console.log("Text", text);
-      const copyContent = async () => {
-      try {
-        await navigator.clipboard.writeText(text);
-        console.log('Content copied to clipboard');
-      } catch (err) {
-        console.error('Failed to copy: ', err);
-      }
-      }
-    
+      let copyText = document.getElementById(id).innerHTML;
+      console.log("Text", copyText);
+      
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText);
+
+      /* Alert the copied text */
+      alert("Copied the text: " + copyText);
+        
     }
   </script>
 </html>
