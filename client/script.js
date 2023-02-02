@@ -36,7 +36,7 @@ function generateUniqueId(){
   // const timestamp = Date.now();
   // const randomNumber = Math.random();
   // const hexadecimalString = randomNumber.toString(16); 
-  const msgID = bot+Math.random();
+  const msgID = "bot"+Math.random();
   // return `id-${timestamp}-${hexadecimalString}`;
   return `id-${msgID}`;
 }
