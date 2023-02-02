@@ -2,18 +2,6 @@ import bot from './assets/bot.svg';
 import user from './assets/user.svg';
 
 
-
-(function() {
-  var loader = document.querySelector('.loader');
-  setTimeout(function() {
-    loader.className = loader.className + ' JS_on';   
-  }, 100);
-  setTimeout(function() {
-    loader.className = 'loader';    
-  }, 3000);
-})();
-
-
 const form = document.querySelector('form');
 const chatContainer =  document.querySelector('#chat_container');
 
