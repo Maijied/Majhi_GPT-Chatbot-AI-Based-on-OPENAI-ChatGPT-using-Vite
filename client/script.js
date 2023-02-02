@@ -52,7 +52,7 @@ function chatStripe(isAi, value, uniqueId){
             />
           </div>
           <div class="message col-9" id=${uniqueId}>${value}</div>
-          <button class="copyBtn col-1" onclick="copyToClipboard(${uniqueId})"><i class="fal fa-copy"></i></button>
+          <button class="copyBtn col-1" onclick="copyToClipboard(${uniqueId})"><i class="fal fa-copy fa-3x" style="font-size: 20px;"></i></button>
         </div>
       </div>
     `
@@ -104,7 +104,7 @@ if(response.ok){
   const err = await response.text();
 
   messageDiv.innerHTML = "Something went wrong!";
-  alert(err);
+  // alert(err);
 }
 
 }
