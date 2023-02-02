@@ -327,7 +327,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
   height: 100px;
   bottom: 0;
   right: 0;
-  margin: 35px 25px;
+  margin: 5px 5px;
 }
 .floating-container:hover {
   height: 300px;
