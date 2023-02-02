@@ -72,8 +72,8 @@ body {
   font-weight: 600;
 	position: absolute;
 	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0;
+  color: #36aabe;
 }
 .profile {
   width: 36px;
