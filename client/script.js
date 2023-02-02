@@ -33,10 +33,12 @@ function typeText(element, text){
 }
 
 function generateUniqueId(){
-  const timestamp = Date.now();
-  const randomNumber = Math.random();
-  const hexadecimalString = randomNumber.toString(16); 
-  return `id-${timestamp}-${hexadecimalString}`;
+  // const timestamp = Date.now();
+  // const randomNumber = Math.random();
+  // const hexadecimalString = randomNumber.toString(16); 
+  const msgID = bot+Math.random();
+  // return `id-${timestamp}-${hexadecimalString}`;
+  return `id-${msgID}`;
 }
 
 function chatStripe(isAi, value, uniqueId){
