@@ -36,15 +36,15 @@
        var Text = document.getElementById(id);
         
         /* Select the text inside text area. */
-        Text.select();
+        Text[0].select();
 
         /* Copy selected text into clipboard */
-        navigator.clipboard.writeText(Text.value);
+        navigator.clipboard.writeText(Text[0].value);
 
         /* Set the copied text as text for 
         div with id clipboard */
         document.getElementById("clipboard")
-            .innerHTML = Text.value;
+            .innerHTML = Text[0].value;
         
     }
   </script>
