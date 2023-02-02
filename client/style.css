@@ -327,10 +327,10 @@ and (-webkit-min-device-pixel-ratio: 3) {
   height: 100px;
   bottom: 0;
   right: 0;
-  margin: 10px 10px;
+  margin: 15px 15px;
 }
 .floating-container:hover {
-  height: 200px;
+  height: 220px;
 }
 .floating-container:hover .floating-button {
   box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
