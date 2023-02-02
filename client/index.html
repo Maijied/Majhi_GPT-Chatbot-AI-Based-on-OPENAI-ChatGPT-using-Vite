@@ -36,7 +36,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
   <script>
-    (function() {
+    document.addEventListener("DOMContentLoaded", function() {
+      (function() {
+      console.log("Working");
       var loader = document.querySelector('.loader');
       setTimeout(function() {
         loader.className = loader.className + ' JS_on';   
@@ -45,6 +47,8 @@
         loader.className = 'loader';    
       }, 3000);
     })();
+    });
+   
 
   function copyToClipboard(element) {
     let id = "id"+element;
