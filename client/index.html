@@ -27,6 +27,13 @@
   </body>
 
   <script>
-    
+  function copyToClipboard(element) {
+    let id = "id"+element;
+    let copyText = document.getElementById(id).innerHTML;
+    /* Select text area by id*/
+    var Text = document.getElementById(id);
+    window.getSelection().selectAllChildren(Text);
+    document.execCommand("Copy") 
+  }
   </script>
 </html>

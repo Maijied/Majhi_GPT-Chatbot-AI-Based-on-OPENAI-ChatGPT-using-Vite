@@ -116,16 +116,4 @@ form.addEventListener('keyup', (e)=>{
   }
 })
 
-function copyToClipboard(element) {
-  let id = "id"+element;
-  console.log("123...",id);
-  let copyText = document.getElementById(id).innerHTML;
-  console.log("Text", copyText);
-   /* Select text area by id*/
-   var Text = document.getElementById(id);
-   window.getSelection().selectAllChildren(Text);
-   document.execCommand("Copy")
-  
-}
-
 
