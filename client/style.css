@@ -452,7 +452,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
 @media screen and (min-device-width: 320px)
 and (max-device-width: 768px) {
   .floating-container {
-    margin: 0px -20px 75px 0px !important;
+    margin: 0px -20px 90px 0px !important;
   }
 }
 
