@@ -52,7 +52,7 @@ function chatStripe(isAi, value, uniqueId){
             />
           </div>
           <div class="message col-9" id=${uniqueId}>${value}</div>
-          <button ${isAi && 'ai'} class="copyBtn col-1" onclick="copyToClipboard(${uniqueId})"><i class="fad fa-copy fa-3x" style="font-size: 20px;"></i></button>
+          <button ${isAi ? bot: bot} class="copyBtn col-1" onclick="copyToClipboard(${uniqueId})"><i class="fad fa-copy fa-3x" style="font-size: 20px;"></i></button>
         </div>
       </div>
     `
