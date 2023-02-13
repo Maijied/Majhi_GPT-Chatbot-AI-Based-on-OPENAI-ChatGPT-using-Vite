@@ -458,3 +458,81 @@ and (max-device-width: 768px) {
 
 
 /* Modal */
+
+/* modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  /* --m-background is set as inline style */
+  background: var(--m-background);
+}
+
+/* using :target */
+/*
+when users will click/enter button(link) browser will add a #id in a url and when that happens we'll show our users the modal that contains that id.
+*/
+.modal-container:target {
+  display: flex;
+}
+
+.modal {
+  width: 60rem;
+  padding: 4rem 2rem;
+  border-radius: .8rem;
+
+  color: var(--light);
+  background: var(--background);
+  box-shadow: var(--m-shadow, .4rem .4rem 10.2rem .2rem) var(--shadow-1);
+  position: relative;
+
+  overflow: hidden;
+}
+
+.modal__title {
+  font-size: 3.2rem;
+}
+
+.modal__text {
+  padding: 0 4rem;
+  margin-top: 4rem;
+
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.modal__btn {
+  margin-top: 4rem;
+  padding: 1rem 1.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 100rem;
+
+  color: inherit;
+  background: transparent;
+  font-size: 1.4rem;
+  font-family: inherit;
+  letter-spacing: .2rem;
+
+  transition: .2s;
+  cursor: pointer;
+}
+
+.modal__btn:nth-of-type(1) {
+  margin-right: 1rem;
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  background: var(--focus);
+  border-color: var(--focus);
+  transform: translateY(-.2rem);
+}
