@@ -55,22 +55,32 @@
           <i class="material-icons">email</i>
         </a>
         </span>
-        <a href="#m1-o" class="link-1" id="m1-c">
-          <span class="float-element">
-            <i class="material-icons">chat</i>
-          </span>
+        <a  href="#modal-opened" class="link-1" id="modal-closed">
+        <span class="float-element">
+          <i class="material-icons">chat</i>
+        </span>
         </a>
       </div>
     </div>
- <div class="modal-container" id="m1-o" style="--m-background: transparent;">
-    <div class="modal">
-      <h1 class="modal__title">Modal 1 Title</h1>
-      <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
-      <button class="modal__btn">Button &rarr;</button>
-      <a href="#m1-c" class="link-2"></a>
-    </div>
-</div>
+
     <!-- Modal -->
+    <div class="modal-container" id="modal-opened">
+      <div class="modal">
+    
+        <div class="modal__details">
+          <h1 class="modal__title">Modal Title</h1>
+          <p class="modal__description">Sentence that will tell user what this modal is for or something.</p>
+        </div>
+    
+        <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
+    
+        <button class="modal__btn">Button &rarr;</button>
+    
+        <a href="#modal-closed" class="link-2"></a>
+    
+      </div>
+    </div>
+    <!-- ModalEnd -->
     
 
     <!-- Widget End -->
