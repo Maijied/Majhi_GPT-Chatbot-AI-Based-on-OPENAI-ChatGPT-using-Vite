@@ -459,5 +459,71 @@ and (max-device-width: 768px) {
 
 /* Modal */
 
+$opacity-transition: opacity $speed ease-in-out;
+.modal-header {
+	align-items: baseline;
+	display: flex;
+	justify-content: space-between;
+}
+
+.close {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	height: 16px;
+	text-decoration: none;
+	width: 16px;
+
+	svg {
+		width: 16px;
+	}
+}
+
+.modal-wrapper {
+	align-items: center;
+	background: rgba(0, 0, 0, 0.7);
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+#modal {
+	opacity: 0;
+	transition: $opacity-transition;
+	visibility: hidden;
+
+	&:target {
+		opacity: 1;
+		visibility: visible;
+
+		.modal-body {
+			opacity: 1;
+			transform: translateY(1);
+		}
+	}
+
+	.modal-body {
+		max-width: 500px;
+		opacity: 0;
+		transform: translateY(-100px);
+		transition: $opacity-transition;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+.outside-trigger {
+	bottom: 0;
+	cursor: default;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
 /* Modal End*/
 
