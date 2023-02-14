@@ -135,6 +135,9 @@ form {
   flex-direction: row;
   gap: 10px;
 }
+feedbackform{
+  background: #ffffff;
+}
 
 textarea {
   width: 100%;
