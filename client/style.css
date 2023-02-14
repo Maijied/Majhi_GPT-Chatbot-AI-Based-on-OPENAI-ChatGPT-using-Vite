@@ -479,7 +479,7 @@ and (max-device-width: 768px) {
 
 .modal-wrapper {
   align-items: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(101, 76, 82, 0.05);
   bottom: 0;
   display: flex;
   justify-content: center;
