@@ -55,7 +55,7 @@
           <i class="material-icons">email</i>
         </a>
         </span>
-        <a data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">
+        <a class="btn-open">
           <span class="float-element">
             <i class="material-icons">chat</i>
           </span>
@@ -64,31 +64,15 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+    <div class="modal-wrapper">
+      <div class="modal">
+          <div class="btn-close"></div>
+          <div class="clear"></div>
+          <div class="content">
+              Hey. Wuzzup.
           </div>
-          <div class="modal-body">
-            <h5>Popover in a modal</h5>
-            <form class="feedbackform">
-              <div class="form-group">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
-          </div>
-        </div>
       </div>
-    </div>
+  </div>
     <!-- ModalEnd -->
     
 
@@ -98,6 +82,7 @@
   <!-- CDN -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
   <script>
   function copyToClipboard(element) {
