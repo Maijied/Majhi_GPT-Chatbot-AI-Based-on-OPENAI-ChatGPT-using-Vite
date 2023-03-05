@@ -1,102 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MaJHi_GPT - Your Coding AI</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
 
-    <div id="app">
-      <nav class="nav-wrapper">
-        <h2 class="nav-title">MaJHi_GPT ChatBot</h2>
-      </nav>
-      <div class="" id="chat_container"></div>
-      <form>
-        <textarea name="prompt" rows="1" cols="1" placeholder="Ask  MaJHi_GPT..."></textarea>
-        <button type="submit"><img src="assets/send.svg" alt="" /></button>
-      </form>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-     
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaJHi_GPT - Your Coding AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      <div class="news sumiblack full-width">
-        <span>Updates</span>
-        <ul class="scrollLeft">
-          <li><a href="#">News 1 - Implmented Copy System.</a></li>
-          <li><a href="#">News 2 - Implmented Copy Notification.</a></li>
-          <li><a href="#">News 1 - Implmented Copy System.</a></li>
-          <li><a href="#">News 2 - Implmented Copy Notification.</a></li>
-        </ul>
-      </div>
+<body>
+
+  <div id="app">
+    <nav class="nav-wrapper">
+      <h2 class="nav-title">MaJHi_GPT ChatBot</h2>
+    </nav>
+    <div class="" id="chat_container"></div>
+    <form>
+      <textarea name="prompt" rows="1" cols="1" placeholder="Ask  MaJHi_GPT..."></textarea>
+      <button type="submit"><img src="assets/send.svg" alt="" /></button>
+    </form>
+
+
+
+    <div class="news sumiblack full-width">
+      <span>Updates</span>
+      <ul class="scrollLeft">
+        <li><a href="#">News 1 - Implmented Copy System.</a></li>
+        <li><a href="#">News 2 - Implmented Copy Notification.</a></li>
+        <li><a href="#">News 1 - Implmented Copy System.</a></li>
+        <li><a href="#">News 2 - Implmented Copy Notification.</a></li>
+      </ul>
     </div>
+  </div>
 
-     <!-- Widget Start -->
+  <!-- Widget Start -->
 
-     <div class="floating-container">
-      <div class="floating-button"><i class="material-icons">face</i></div>
-      <div class="element-container">
-    
-        <a href="tel:+8801629158131"> 
+  <div class="floating-container">
+    <div class="floating-button"><i class="material-icons">face</i></div>
+    <div class="element-container">
+
+      <a href="tel:+8801629158131">
         <span class="float-element tooltip-left">
           <i class="material-icons">phone</i>
-        </a>
-        </span>
-        <a href="mailto:mdshuvo40@gmail.com">
-          <span class="float-element">
+      </a>
+      </span>
+      <a href="mailto:mdshuvo40@gmail.com">
+        <span class="float-element">
           <i class="material-icons">email</i>
-        </a>
+      </a>
+      </span>
+      <a class="btn-open">
+        <span class="float-element">
+          <i class="material-icons">chat</i>
         </span>
-        <a class="btn-open">
-          <span class="float-element">
-            <i class="material-icons">chat</i>
-          </span>
-        </a>
-      </div>
+      </a>
     </div>
-
-    <!-- Modal -->
-    <div class="modal-wrapper">
-      <div class="modal-header">
-        <h2>Give Feedback</h2>
-        <h4>We're Working on Improvements!</h4>
-      </div>
-      <div class="modal-body">
-        <p>Do you have any thoughts you'd like to share?</p>
-        <textarea  name="txtname" rows="4" cols="20" maxlength="200" style="color: black; margin-top: 20px; border: 2px black; "></textarea>
-      </div>
-      <div class="modal-fooeter">
-        <button>Send Feedback</button>
-      </div>
   </div>
-    <!-- ModalEnd -->
-    
 
-    <!-- Widget End -->
-    <script type="module" src="script.js"></script>
-  </body>
-  <!-- CDN -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <script defer src="/_vercel/insights/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <!-- Modal -->`
+  <div class="modal-header modal-wrapper">
+    <h2>Give Feedback</h2>
+    <h4>We're Working on Improvements!</h4>
+  </div>
+  <div class="modal-body">
+    <p>Do you have any thoughts you'd like to share?</p>
+    <textarea name="txtname" rows="4" cols="20" maxlength="200"
+      style="color: black; margin-top: 20px; border: 2px black; "></textarea>
+  </div>
+  <div class="modal-fooeter">
+    <button>Send Feedback</button>
+  </div>
+  <!-- ModalEnd -->
 
-  <script>
+
+  <!-- Widget End -->
+  <script type="module" src="script.js"></script>
+</body>
+<!-- CDN -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script>
   function copyToClipboard(element) {
-    let id = "id"+element;
+    let id = "id" + element;
     let copyText = document.getElementById(id).innerHTML;
     /* Select text area by id*/
     var Text = document.getElementById(id);
     window.getSelection().selectAllChildren(Text);
-    document.execCommand("Copy") 
+    document.execCommand("Copy")
 
 
     Toastify({
@@ -111,8 +112,9 @@
       style: {
         background: "linear-gradient(to right, #00b09b, #96c93d)",
       },
-      onClick: function(){} // Callback after click
+      onClick: function () { } // Callback after click
     }).showToast();
   }
-  </script>
+</script>
+
 </html>
