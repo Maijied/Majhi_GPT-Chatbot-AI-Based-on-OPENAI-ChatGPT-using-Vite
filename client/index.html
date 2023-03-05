@@ -79,10 +79,10 @@
             </div>
           </div>
           <div class="modal-body" style="margin-top: 10px;">
-            <textarea rows="5" cols="10" style="background-color: #bbc6c6; color: black;"></textarea>
+            <textarea id="feedback_value" rows="5" cols="10" style="background-color: #bbc6c6; color: black;"></textarea>
           </div>
           <div class="modal-footer" style="margin-top: 15px;">
-            <button class="button-49">Send Feedback</button>
+            <button class="button-49" value="Send Email" onclick="sendEmail()">Send Feedback</button>
           </div>
         </div>
     </div>
@@ -97,6 +97,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script defer src="/_vercel/insights/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>  
+<script src="smtp.js"></script>
 
 <script>
   function copyToClipboard(element) {
