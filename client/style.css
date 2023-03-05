@@ -580,13 +580,6 @@ and (max-device-width: 768px) {
   }
 }
 
-<!-- HTML !-->
-<button class="button-30" role="button">Button 30</button>
-
-/* CSS */
-<!-- HTML !-->
-<button class="button-49" role="button">Button 49</button>
-
 /* CSS */
 .button-49,
 .button-49:after {
